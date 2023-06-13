@@ -35,11 +35,19 @@ botonEnvio.addEventListener("click",function(evento){
 
     }else{
 
-        Swal.fire(
+        /*Swal.fire(
             'Good job!',
             'You clicked the button!',
             'success'
-        )  
+        ) */ 
+        let reservas=[]
+        let reserva={
+            nombres,
+            correo,
+            telefono
+        }
+        reservas.push(reserva)
+        localStorage.setItem("datosMemoria",JSON.stringify(reserva))
 
     }
 
