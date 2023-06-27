@@ -35,19 +35,29 @@ botonEnvio.addEventListener("click",function(evento){
 
     }else{
 
-        /*Swal.fire(
+        Swal.fire(
             'Good job!',
             'You clicked the button!',
             'success'
-        ) */ 
-        let reservas=[]
+        )
+
+        //preguntando si tengo datos en memoria
+        let datosMemoria=JSON.parse(localStorage.getItem("datosMemoria"))
+        let reservas
+        if(datosMemoria==null){
+            reservas=[]
+        }else{
+            reservas=datosMemoria
+        }
+
+       
         let reserva={
             nombres,
             correo,
             telefono
         }
         reservas.push(reserva)
-        localStorage.setItem("datosMemoria",JSON.stringify(reserva))
+        localStorage.setItem("datosMemoria",JSON.stringify(reservas))
 
     }
 
