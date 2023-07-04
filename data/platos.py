@@ -18,3 +18,26 @@ menu17=["sancocho de bagre",30000,"platoFuerte"]
 menu18=["cocadas",5600,"postres"]
 menu19=["salchipapas del coste",25000,"platoFuerte"]
 menu20=["wafle de arequipe",18000,"postres"]
+
+platosPopulares=[
+    menu,
+    menu2,
+    menu3,
+    menu4,
+    menu5,
+    menu6,
+    menu7,
+    menu8,
+    menu9,
+    menu10,
+    menu11,
+    menu12,
+    menu13,
+    menu14,
+    menu15,
+    menu16,
+    menu17,
+    menu18,
+    menu19,
+    menu20
+]
